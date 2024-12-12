@@ -1,0 +1,213 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+  }
+  
+  /* Navigation */
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  #hero .highlight {
+    color: #ffea00;
+  }
+  .btn {
+    background: #00bcd4;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn:hover {
+    background: #008c9e;
+  }
+  
+  /* Sections */
+  section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  /* Projects */
+  .projects-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .project-card {
+    background: #292929;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  .project-card h3 {
+    color: #ffea00;
+  }
+  
+  /* Skills */
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .skill-bar {
+    background: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .skill-bar p {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+  }
+  .progress {
+    height: 20px;
+    background: #00bcd4;
+  }
+  
+  /* Contact */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  input, textarea, button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  button {
+    background: #ff416c;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #e0385a;
+  }
+  
+  /* Footer */
+  footer {
+    background: #111;
+    text-align: center;
+    padding: 1rem;
+  }
+  /* General Responsive Styling */
+body {
+    font-size: 16px;
+    
+  }
+  
+  header nav ul {
+    flex-wrap: wrap;
+  }
+  
+  .projects-grid, .skills-grid {
+    flex-wrap: wrap;
+  }
+  
+ /* Small Screens (Tablets and Smaller) */
+@media (max-width: 768px) {
+    body {
+      background-image: url("scaha3rt.jpg");
+      background-attachment: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #hero h2 {
+      font-size: 1.8rem;
+    }
+  
+    .projects-grid, .skills-grid {
+      flex-direction: column;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    /* Optional adjustments for hero section */
+    #hero {
+      padding: 2rem 1rem;
+    }
+  
+    .hero-image {
+      height: 250px; /* Adjust based on your design */
+    }
+  }
+  
+  /* Very Small Screens (Phones) */
+  @media (max-width: 480px) {
+    #hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    section {
+      padding: 1.5rem 1rem;
+    }
+  
+    input, textarea, button {
+      font-size: 0.9rem;
+      padding: 0.8rem;
+      width: 100%; /* Make form elements responsive */
+    }
+  
+    .skill-bar p {
+      font-size: 0.8rem;
+    }
+  
+    /* Optional adjustments for hero section */
+    #hero {
+      padding: 1rem 0.5rem;
+    }
+  
+    .hero-image {
+      height: 200px; /* Adjust based on your design */
+    }
+  }
+  
